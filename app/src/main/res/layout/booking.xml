@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/test"
+    tools:ignore="HardcodedText">
+
+    <ImageView
+        android:contentDescription="logo"
+        android:id="@+id/logo"
+        android:layout_width="188dp"
+        android:layout_height="159dp"
+        android:src="@drawable/mentornet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_below="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masa"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textColor="@color/white"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="510dp"
+        android:layout_marginTop="238dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp">
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="Create a listing: Food Drive"/>
+        <!--possible change sa future to use a drop down menu for different events-->
+
+
+        <!--Event Name-->
+        <TextView
+            android:id="@+id/eventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="60dp"
+            android:text="Event Name"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="80dp"
+            android:text="Enter Event Name"
+            android:padding="8dp"/>
+        <!--Date-->
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="225dp"
+            android:layout_marginTop="60dp"
+            android:text="Date"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="225dp"
+            android:layout_marginTop="80dp"
+            android:text="Enter Date"
+            android:padding="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="120dp"
+            android:text="Location"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="140dp"
+            android:text="Enter Location Details"
+            android:textColor="@color/black"
+            android:padding="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="190dp"
+            android:textSize="30sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="   Personal Information"
+            android:textColor="@color/black" />
+
+        <!--Organizer Name-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="230dp"
+            android:text="Organizer Name"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="255dp"
+            android:layout_marginRight="15dp"
+            android:text="Enter your Name"
+            android:padding="8dp"/>
+
+        <!--Number-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="295dp"
+            android:text="Phone Number"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="320dp"
+            android:layout_marginRight="15dp"
+            android:text="Enter your Contact Number"
+            android:padding="8dp"/>
+
+        <!--Email-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="360dp"
+            android:text="Email"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="385dp"
+            android:layout_marginRight="15dp"
+            android:text="Enter your Email Address"
+            android:padding="8dp"/>
+    </androidx.cardview.widget.CardView>
+
+<Button
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="750dp"
+    android:layout_marginLeft="280dp"
+    android:layout_marginRight="15dp"
+    android:text="Submit"/>
+
+</RelativeLayout>
